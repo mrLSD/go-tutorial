@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-    fmt.Printf("Arr: %v\n", arrays())
+    fmt.Printf("Arrays: %v\n", arrays())
     
     utils.ForTest()
     utils.TestArrays()

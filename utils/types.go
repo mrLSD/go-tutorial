@@ -26,7 +26,7 @@ func (v Vector) testInlineVect(x, y int) {
 
 func pointerVect(p *Vector, x, y int) {
     p.x = x
-    p.y = y
+    p.y=  y
     fmt.Printf("\tTest Vector type - mutable %v\n", p)
 }
 

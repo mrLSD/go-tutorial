@@ -50,7 +50,7 @@ func testSwitch() {
             fmt.Printf("\tcase for i > 0 && 20 < i: %d\n", i)
             fallthrough
         case i > 5 && 15 > i:
-            fmt.Printf("\tcase withou break for i > 5 && 15 < i: %d\n", i)
+            fmt.Printf("\tcase without break for i > 5 && 15 < i: %d\n", i)
             fallthrough
         default:
             fmt.Printf("\tdefault case without break for: %d\n", i)

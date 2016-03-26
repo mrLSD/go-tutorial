@@ -6,7 +6,7 @@ import "fmt"
     various case for loop usage
 */
 func ForTest() {
-    fmt.Printf("\n==========================\nTest For\n")
+    fmt.Printf("\n==========================\nTest For control\n")
     var sum int = 0
     var i int
     // i = 0
@@ -72,13 +72,13 @@ func ForTest() {
         sum += i
     }
     // 45, 0
-    fmt.Printf("\t Test sum: %d [i: %d]\n", sum, i)
+    fmt.Printf("\t Test sum without index changing: %d [i: %d]\n", sum, i)
     
     var arr1 [3]int
     arr1[0] = 20
     println("Array range:")
     for key, value := range arr1 {
-        fmt.Printf("\t [%d] = %d]\n", key, value)
+        fmt.Printf("\t [%d] = %d\n", key, value)
     }
     
     // Reverse array

@@ -23,6 +23,11 @@ func TestFunc() {
     arr := []int{1, 3, 5, 9}
     x, y = testBasicFunc5(4, arr...)
     fmt.Printf("\tFunc after variadic params with predeclared slice: %d %d\n", x, y)
+    
+    lambda := testLambda(10)
+    fmt.Printf("\tTest lambda with predefined state: %d\n", lambda())
+    fmt.Printf("\tTest lambda with predefined state: %d\n", lambda())
+    fmt.Printf("\tTest lambda with predefined state: %d\n", lambda())
 }
 
 /** Test functions usage
@@ -66,4 +71,16 @@ func testBasicFunc5(a int, b ...int) (x, y int) {
         y += res
     }
     return
+}
+
+/** Test lambda func
+    That func return func but
+    statement/environment PREDEFINED!!!
+ */
+func testLambda(predefinded int) func() int {
+    i := predefinded
+    return func() int {
+        i += 1
+        return i
+    }
 }

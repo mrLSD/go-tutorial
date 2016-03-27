@@ -28,6 +28,8 @@ func TestFunc() {
     fmt.Printf("\tTest lambda with predefined state: %d\n", lambda())
     fmt.Printf("\tTest lambda with predefined state: %d\n", lambda())
     fmt.Printf("\tTest lambda with predefined state: %d\n", lambda())
+    
+    testRecursion(4)
 }
 
 /** Test functions usage
@@ -83,4 +85,14 @@ func testLambda(predefinded int) func() int {
         i += 1
         return i
     }
+}
+
+/** Test recursion by params i-times
+ */
+func testRecursion(i int) {
+    if i < 1 {
+        return
+    }
+    fmt.Printf("\tTest recursion: %d\n", i)
+    testRecursion(i-1)
 }

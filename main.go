@@ -13,6 +13,7 @@ func main() {
     utils.TestSLices()
     utils.TestMaps()
     utils.TestVect()
+    utils.TestFunc()
 }
 
 // Test simple arrays

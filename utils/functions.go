@@ -14,10 +14,15 @@ func TestFunc() {
     fmt.Printf("\tFinc after reverce multiple vars: %d %d\n", x, y)
     
     x, y = testBasicFunc5(4, 7, 6)
-    fmt.Printf("\tFinc after variadic params: %d %d\n", x, y)
+    fmt.Printf("\tFunc after variadic params [3]: %d %d\n", x, y)
     
     x, y = testBasicFunc5(4, 7, 6, 3)
-    fmt.Printf("\tFinc after variadic params: %d %d\n", x, y)
+    fmt.Printf("\tFunc after variadic params [4]: %d %d\n", x, y)
+    
+    // Test with predeclared slice
+    arr := []int{1, 3, 5, 9}
+    x, y = testBasicFunc5(4, arr...)
+    fmt.Printf("\tFunc after variadic params with predeclared slice: %d %d\n", x, y)
 }
 
 /** Test functions usage

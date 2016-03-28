@@ -15,6 +15,7 @@ func main() {
     utils.TestVect()
     utils.TestFunc()
     utils.TestStruct()
+    utils.TestInterfaces()
 }
 
 // Test simple arrays

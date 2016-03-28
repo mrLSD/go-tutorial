@@ -14,6 +14,9 @@ func TestInterfaces() {
     
     testTypeAssertion(d)
     testTypeAssertion(c)
+
+    i := 100500    
+    testTypeAssertion2(i)
 }
 
 /** Test interface for types that implement 
@@ -71,6 +74,18 @@ func (m man) about() string {
     value of interface type
  */
 func testTypeAssertion(val animals) {
+    if v, ok := val.(dog); ok {
+        fmt.Printf("\tTest Type Assertion. It's valid type: %#v\n", v)
+    } else {
+        fmt.Printf("\tTest Type Assertion. Isn't valid type: %#v\n", val)
+    }
+}
+
+/** Empty interface sutisfy for any type
+    All types satisfy the empty interface
+    and val could be any type
+ */
+func testTypeAssertion2(val interface{}) {
     if v, ok := val.(dog); ok {
         fmt.Printf("\tTest Type Assertion. It's valid type: %#v\n", v)
     } else {

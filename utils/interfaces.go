@@ -9,7 +9,11 @@ func TestInterfaces() {
     basicInterface()
     
     d := dog{name: "A dog", msg: "Gafff~~"}
+    c := cat{name: "A caaat", msg: "r-r-Myauuu... ))"}
     interfaceAsTypePAram(d)
+    
+    testTypeAssertion(d)
+    testTypeAssertion(c)
 }
 
 /** Test interface for types that implement 
@@ -61,4 +65,15 @@ func (c cat) about() string {
 
 func (m man) about() string {
     return m.name + " - " + m.msg
+}
+
+/** Type assertions make possible checke type for
+    value of interface type
+ */
+func testTypeAssertion(val animals) {
+    if v, ok := val.(dog); ok {
+        fmt.Printf("\tTest Type Assertion. It's valid type: %#v\n", v)
+    } else {
+        fmt.Printf("\tTest Type Assertion. Isn't valid type: %#v\n", val)
+    }
 }

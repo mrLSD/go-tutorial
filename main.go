@@ -16,6 +16,7 @@ func main() {
     utils.TestFunc()
     utils.TestStruct()
     utils.TestInterfaces()
+    utils.TestErrors()
 }
 
 // Test simple arrays

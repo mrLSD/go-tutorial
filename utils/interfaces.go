@@ -17,6 +17,9 @@ func TestInterfaces() {
 
     i := 100500    
     testTypeAssertion2(i)
+    
+    res := implicitInterface()
+    fmt.Printf("\tImplicit Interface msg: %v\n", res)
 }
 
 /** Test interface for types that implement 
@@ -91,4 +94,11 @@ func testTypeAssertion2(val interface{}) {
     } else {
         fmt.Printf("\tTest Type Assertion. Isn't valid type: %#v\n", val)
     }
+}
+
+/** Test implicit interface init
+ */
+func implicitInterface() string {
+    var a animals = dog{"Dog", "Coold"}
+    return a.about()
 }

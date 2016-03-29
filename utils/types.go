@@ -1,7 +1,9 @@
+// Types testing
 package utils
 
 import "fmt"
 
+// Basic struct
 type Vector struct {
     x, y    int
     name    string
@@ -37,6 +39,7 @@ func TestVect() {
     v1.testInlineVect(3, 4)
     fmt.Println(v1)
     
+    // Test for pointer
     p1 := &v1
     pointerVect(p1, 5, 6)
     fmt.Println(v1)

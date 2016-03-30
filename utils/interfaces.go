@@ -155,6 +155,9 @@ func emptyInterface() {
 } 
 
 /** Test type switching via interface declaration
+    The declaration in a type switch has the same 
+    syntax as a type assertion i.(T), but the 
+    specific type T is replaced with the keyword type. 
  */
 func interfaceTypeSwitching() {
     // Empty interface

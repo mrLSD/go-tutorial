@@ -22,6 +22,7 @@ func TestInterfaces() {
     fmt.Printf("\tImplicit Interface msg: %v\n", res)
     
     emptyInterface()
+    interfaceTypeSwitching()
 }
 
 /** Test interface for types that implement 
@@ -152,3 +153,20 @@ func emptyInterface() {
     fmt.Printf("\tTest <nil> interface - valuse filled: %v <%T>\n", i, i)
 
 } 
+
+/** Test type switching via interface declaration
+ */
+func interfaceTypeSwitching() {
+    // Empty interface
+    var i interface{}
+    var d dog = dog{"The dog", "G-aff"}
+    i = d
+    // Interface type switch via constuction i.(type) 
+    // that's it type assertion variations
+    switch t := i.(type) {
+        case cat:
+            fmt.Printf("\tInterface type switch: %#v\n", t)
+        case dog:
+            fmt.Printf("\tInterface type switch: %#v\n", t)
+    }
+}

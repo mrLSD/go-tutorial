@@ -20,6 +20,8 @@ func TestInterfaces() {
     
     res := implicitInterface()
     fmt.Printf("\tImplicit Interface msg: %v\n", res)
+    
+    emptyInterface()
 }
 
 /** Test interface for types that implement 
@@ -73,6 +75,22 @@ func (m man) about() string {
     return m.name + " - " + m.msg
 }
 
+// Type for pointer testing
+type panimal struct {
+    name, msg   string
+}
+
+// Pointer reciver
+// And invoked via interface with not init reciver
+// we should check ptr - is it NIL
+func (p *panimal) about() string {
+    fmt.Printf("\tNil interface: %#v %T\n", p)
+    if p == nil {
+        return "our result - <nil>"
+    }
+    return p.name + " - " + p.msg
+}
+
 /** Type assertions make possible checke type for
     value of interface type
  */
@@ -89,6 +107,8 @@ func testTypeAssertion(val animals) {
     and val could be any type
  */
 func testTypeAssertion2(val interface{}) {
+    // Without `ok` -if not valid type
+    // program exit with `panic`!!
     if v, ok := val.(dog); ok {
         fmt.Printf("\tTest Type Assertion. It's valid type: %#v\n", v)
     } else {
@@ -102,3 +122,33 @@ func implicitInterface() string {
     var a animals = dog{"Dog", "Coold"}
     return a.about()
 }
+
+/** Test empty interface and value init via that
+    And test <nil> interfaces and invoking thier methods
+ */
+func emptyInterface() {
+    // Empty interface
+    var i interface{}
+    
+    i = "it's string"
+    fmt.Printf("\tTest empty interface - valuse association: %v <%T>\n", i, i)
+    
+    i = 43
+    fmt.Printf("\tTest empty interface - valuse association: %v <%T>\n", i, i)
+ 
+    // Test `nil` interface
+    // that case only for <ptr> cause not ptr fill struct
+    // fields as empty values
+    var ia animals 
+    var p *panimal
+    ia = p
+    i = ia.about()
+    fmt.Printf("\tTest <nil> interface - valuse not filled: %v <%T>\n", i, i)
+    
+    // Fill interface via pointer init
+    p = &panimal{"Ptr", "Msg..."}
+    ia = p
+    i = ia.about()
+    fmt.Printf("\tTest <nil> interface - valuse filled: %v <%T>\n", i, i)
+
+} 

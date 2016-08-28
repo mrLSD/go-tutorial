@@ -15,6 +15,7 @@ import (
 	"./command-line-flags"
 	"./constants"
 	"./defer-exec"
+	"./environment-variables"
 	"./epoch"
 	"./errors"
 	"./for_loop"
@@ -132,4 +133,5 @@ func Run() {
 	line_filters.Main()
 	command_line_arguments.Main()
 	command_line_flags.Main()
+	environment_variables.Main()
 }

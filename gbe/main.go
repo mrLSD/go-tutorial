@@ -11,6 +11,7 @@ import (
 	"./closing-channels"
 	"./closures"
 	"./collection-functions"
+	"./command-line-arguments"
 	"./constants"
 	"./defer-exec"
 	"./epoch"
@@ -128,4 +129,5 @@ func Run() {
 	reading_files.Main()
 	writing_files.Main()
 	line_filters.Main()
+	command_line_arguments.Main()
 }

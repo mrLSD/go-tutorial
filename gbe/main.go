@@ -12,6 +12,7 @@ import (
 	"./closures"
 	"./collection-functions"
 	"./command-line-arguments"
+	"./command-line-flags"
 	"./constants"
 	"./defer-exec"
 	"./epoch"
@@ -130,4 +131,5 @@ func Run() {
 	writing_files.Main()
 	line_filters.Main()
 	command_line_arguments.Main()
+	command_line_flags.Main()
 }

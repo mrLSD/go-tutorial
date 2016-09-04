@@ -46,6 +46,7 @@ import (
 	"./slices"
 	"./sorting"
 	"./sorting-by-functions"
+	"./spawning-processes"
 	"./stateful-goroutines"
 	"./string-formatting"
 	"./string-functions"
@@ -133,5 +134,7 @@ func Run() {
 	line_filters.Main()
 	command_line_arguments.Main()
 	command_line_flags.Main()
+
 	environment_variables.Main()
+	spawning_processes.Main()
 }

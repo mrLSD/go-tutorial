@@ -18,6 +18,7 @@ import (
 	"./multiple-return-values"
 	"./variadic-functions"
 
+	"./closures"
 	"./recursion"
 
 	"./pointers"
@@ -50,6 +51,7 @@ func Run() {
 	multiple_return_values.Main()
 	variadic_functions.Main()
 
+	closures.Main()
 	recursion.Main()
 
 	pointers.Main()

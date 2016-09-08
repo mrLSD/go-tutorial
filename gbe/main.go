@@ -44,6 +44,7 @@ import (
 	"./regular-expressions"
 	"./select_go"
 	"./sha1-hashes"
+	"./signals"
 	"./slices"
 	"./sorting"
 	"./sorting-by-functions"
@@ -139,4 +140,5 @@ func Run() {
 	environment_variables.Main()
 	spawning_processes.Main()
 	execing_processes.Main()
+	signals.Main()
 }

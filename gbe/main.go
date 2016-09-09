@@ -27,8 +27,8 @@ import (
 	"./goroutines"
 	"./channels"
 	"./channel-buffering"
-
 	"./channel-synchronization"
+	"./channel-directions"
 )
 
 func Run() {
@@ -49,10 +49,8 @@ func Run() {
 	functions.Main()
 	multiple_return_values.Main()
 	variadic_functions.Main()
-
 	closures.Main()
 	recursion.Main()
-
 	pointers.Main()
 	structs.Main()
 	methods.Main()
@@ -63,4 +61,5 @@ func Run() {
 	channels.Main()
 	channel_buffering.Main()
 	channel_synchronization.Main()
+	channel_directions.Main()
 }

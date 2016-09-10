@@ -19,6 +19,7 @@ import (
 	"./epoch"
 	"./errors"
 	"./execing-processes"
+	"./exit"
 	"./for_loop"
 	"./functions"
 	"./goroutines"
@@ -141,4 +142,5 @@ func Run() {
 	spawning_processes.Main()
 	execing_processes.Main()
 	signals.Main()
+	exit.Main()
 }

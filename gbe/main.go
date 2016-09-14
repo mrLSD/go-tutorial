@@ -10,6 +10,8 @@ import (
 	"./if-else"
 	"./switch-control"
 	"./arrays"
+	"./slices"
+	"./maps"
 )
 
 func Run() {
@@ -23,4 +25,6 @@ func Run() {
 	if_else.Main()
 	switch_control.Main()
 	arrays.Main()
+	slices.Main()
+	maps.Main()
 }

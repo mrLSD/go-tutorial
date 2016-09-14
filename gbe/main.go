@@ -8,6 +8,7 @@ import (
 	"./constants"
 	"./for_loop"
 	"./if-else"
+	"./switch-control"
 )
 
 func Run() {
@@ -18,4 +19,5 @@ func Run() {
 	constants.Main()
 	for_loop.Main()
 	if_else.Main()
+	switch_control.Main()
 }

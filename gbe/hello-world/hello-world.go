@@ -5,6 +5,6 @@ package hello_world
 
 import "fmt"
 
-func main() {
+func Main() {
     fmt.Println("hello world")
 }

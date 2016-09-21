@@ -10,7 +10,7 @@ func init() {
 }
 
 /** Test IF control
- */ 
+ */
 func testIf() {
     fmt.Printf("\n================\nTest IF control\n")
     i := 10

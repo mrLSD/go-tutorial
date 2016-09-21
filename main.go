@@ -3,11 +3,12 @@ package main
 import (
     "fmt"
     "./utils"
+    "./gbe"
 )
 
 func main() {
     fmt.Printf("Arrays: %v\n", arrays())
-    
+
     utils.ForTest()
     utils.TestArrays()
     utils.TestSLices()
@@ -18,6 +19,10 @@ func main() {
     utils.TestInterfaces()
     utils.TestErrors()
     utils.TestChannels()
+
+    utils.TestStructs()
+
+    gbe.Run()
 }
 
 // Test simple arrays

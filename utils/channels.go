@@ -18,7 +18,7 @@ func TestChannels() {
     // Read / Write blocke and WAITING
     // before reading after writin
     fmt.Printf("\tRecived from channel: %v\n", <-ch)
-    
+
     bufferedChannels()
 }
 
@@ -29,7 +29,7 @@ func TestChannels() {
     prevent runtime errors!
  */
 func bufferedChannels() {
-    // Channel bufer = 3 
+    // Channel bufer = 3
     ch := make(chan string, 3)
     // Send to channel
     ch <- "Will"
@@ -42,11 +42,11 @@ func bufferedChannels() {
     }
     ch <- "! ! !"
     for len(ch) > 0 {
-        msg += <- ch + " "
+        msg += <- ch + " [x]"
     }
     fmt.Printf("\tRecived from channel buffer: %v\n", msg)
 }
 
 func testChannelsSync() {
-    
+
 }

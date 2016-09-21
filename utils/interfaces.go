@@ -7,25 +7,25 @@ import "fmt"
 func TestInterfaces() {
     fmt.Printf("=============================\nBasic usage for interfaces\n")
     basicInterface()
-    
+
     d := dog{name: "A dog", msg: "Gafff~~"}
     c := cat{name: "A caaat", msg: "r-r-Myauuu... ))"}
     interfaceAsTypePAram(d)
-    
+
     testTypeAssertion(d)
     testTypeAssertion(c)
 
-    i := 100500    
+    i := 100500
     testTypeAssertion2(i)
-    
+
     res := implicitInterface()
     fmt.Printf("\tImplicit Interface msg: %v\n", res)
-    
+
     emptyInterface()
     interfaceTypeSwitching()
 }
 
-/** Test interface for types that implement 
+/** Test interface for types that implement
     interface method
  */
 func basicInterface() {
@@ -34,7 +34,7 @@ func basicInterface() {
         dog{"A dog", "Gaff"},
         cat{"A cat", "Myau"},
         man{"A man", "Oh, hi!"}}
-    
+
     for _, str := range animal {
         fmt.Printf("\tInterface msg: %v\n", str.about())
     }
@@ -130,41 +130,41 @@ func implicitInterface() string {
 func emptyInterface() {
     // Empty interface
     var i interface{}
-    
+
     i = "it's string"
     fmt.Printf("\tTest empty interface - valuse association: %v <%T>\n", i, i)
-    
+
     i = 43
     fmt.Printf("\tTest empty interface - valuse association: %v <%T>\n", i, i)
- 
+
     // Test `nil` interface
     // that case only for <ptr> cause not ptr fill struct
     // fields as empty values
-    var ia animals 
+    var ia animals
     var p *panimal
     ia = p
     i = ia.about()
     fmt.Printf("\tTest <nil> interface - valuse not filled: %v <%T>\n", i, i)
-    
+
     // Fill interface via pointer init
     p = &panimal{"Ptr", "Msg..."}
     ia = p
     i = ia.about()
     fmt.Printf("\tTest <nil> interface - valuse filled: %v <%T>\n", i, i)
 
-} 
+}
 
 /** Test type switching via interface declaration
-    The declaration in a type switch has the same 
-    syntax as a type assertion i.(T), but the 
-    specific type T is replaced with the keyword type. 
+    The declaration in a type switch has the same
+    syntax as a type assertion i.(T), but the
+    specific type T is replaced with the keyword type.
  */
 func interfaceTypeSwitching() {
     // Empty interface
     var i interface{}
     var d dog = dog{"The dog", "G-aff"}
     i = d
-    // Interface type switch via constuction i.(type) 
+    // Interface type switch via constuction i.(type)
     // that's it type assertion variations
     switch t := i.(type) {
         case cat:

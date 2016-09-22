@@ -7,6 +7,7 @@ import (
 	"./variables"
 	"./constants"
 	"./for_loop"
+	"./if-else"
 )
 
 func Run() {
@@ -16,4 +17,5 @@ func Run() {
 	variables.Main()
 	constants.Main()
 	for_loop.Main()
+	if_else.Main()
 }

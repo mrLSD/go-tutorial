@@ -6,6 +6,7 @@ import (
 	"./values"
 	"./variables"
 	"./constants"
+	"./for_loop"
 )
 
 func Run() {
@@ -14,4 +15,5 @@ func Run() {
 	values.Main()
 	variables.Main()
 	constants.Main()
+	for_loop.Main()
 }

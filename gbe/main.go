@@ -5,6 +5,7 @@ import (
 	"./hello-world"
 	"./values"
 	"./variables"
+	"./constants"
 )
 
 func Run() {
@@ -12,4 +13,5 @@ func Run() {
 	hello_world.Main()
 	values.Main()
 	variables.Main()
+	constants.Main()
 }

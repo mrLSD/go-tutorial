@@ -22,6 +22,7 @@ import (
 	"./if-else"
 	"./interfaces"
 	"./json"
+	"./line-filters"
 	"./maps"
 	"./methods"
 	"./multiple-return-values"
@@ -126,4 +127,5 @@ func Run() {
 	base64_encoding.Main()
 	reading_files.Main()
 	writing_files.Main()
+	line_filters.Main()
 }

@@ -34,6 +34,7 @@ import (
 	"./range-flow"
 	"./range-over-channels"
 	"./rate-limiting"
+	"./reading-files"
 	"./recursion"
 	"./regular-expressions"
 	"./select_go"
@@ -122,4 +123,5 @@ func Run() {
 	url_parsing.Main()
 	sha1_hashes.Main()
 	base64_encoding.Main()
+	reading_files.Main()
 }

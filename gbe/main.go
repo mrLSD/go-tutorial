@@ -14,6 +14,7 @@ import (
 	"./maps"
 	"./range-flow"
 	"./functions"
+	"./multiple-return-values"
 )
 
 func Run() {
@@ -32,4 +33,5 @@ func Run() {
 
 	range_flow.Main()
 	functions.Main()
+	multiple_return_values.Main()
 }

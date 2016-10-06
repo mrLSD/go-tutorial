@@ -13,6 +13,7 @@ import (
 	"./slices"
 	"./maps"
 	"./range-flow"
+	"./functions"
 )
 
 func Run() {
@@ -28,5 +29,7 @@ func Run() {
 	arrays.Main()
 	slices.Main()
 	maps.Main()
+
 	range_flow.Main()
+	functions.Main()
 }

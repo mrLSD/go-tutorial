@@ -15,6 +15,7 @@ import (
 	"./range-flow"
 	"./functions"
 	"./multiple-return-values"
+	"./variadic-functions"
 )
 
 func Run() {
@@ -34,4 +35,5 @@ func Run() {
 	range_flow.Main()
 	functions.Main()
 	multiple_return_values.Main()
+	variadic_functions.Main()
 }

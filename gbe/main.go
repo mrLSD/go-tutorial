@@ -18,6 +18,7 @@ import (
 	"./multiple-return-values"
 	"./variadic-functions"
 
+	"./methods"
 	"./interfaces"
 
 	"./errors"
@@ -45,6 +46,7 @@ func Run() {
 	multiple_return_values.Main()
 	variadic_functions.Main()
 
+	methods.Main()
 	interfaces.Main()
 
 	errors.Main()

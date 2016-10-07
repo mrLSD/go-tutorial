@@ -18,6 +18,7 @@ import (
 	"./multiple-return-values"
 	"./variadic-functions"
 
+	"./pointers"
 	"./structs"
 	"./methods"
 	"./interfaces"
@@ -47,6 +48,7 @@ func Run() {
 	multiple_return_values.Main()
 	variadic_functions.Main()
 
+	pointers.Main()
 	structs.Main()
 	methods.Main()
 	interfaces.Main()

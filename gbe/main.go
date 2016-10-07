@@ -18,6 +18,8 @@ import (
 	"./multiple-return-values"
 	"./variadic-functions"
 
+	"./interfaces"
+
 	"./errors"
 	"./goroutines"
 	"./channels"
@@ -42,6 +44,8 @@ func Run() {
 	functions.Main()
 	multiple_return_values.Main()
 	variadic_functions.Main()
+
+	interfaces.Main()
 
 	errors.Main()
 	goroutines.Main()

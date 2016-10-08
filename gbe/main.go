@@ -17,6 +17,7 @@ import (
 	"./functions"
 	"./multiple-return-values"
 	"./variadic-functions"
+	"./goroutines"
 	"./channels"
 	"./channel-buffering"
 )
@@ -40,6 +41,7 @@ func Run() {
 	multiple_return_values.Main()
 	variadic_functions.Main()
 
+	goroutines.Main()
 	channels.Main()
 	channel_buffering.Main()
 }

@@ -2,11 +2,15 @@ package main
 
 import (
     "fmt"
+    "flag"
     "./utils"
     "./gbe"
 )
 
 func main() {
+    useGBE := flag.Bool("gbe", false, "Use Go by Examples")
+    flag.Parse()
+
     fmt.Printf("Arrays: %v\n", arrays())
 
     utils.ForTest()
@@ -22,7 +26,9 @@ func main() {
 
     utils.TestStructs()
 
-    gbe.Run()
+    if *useGBE {
+        gbe.Run()
+    }
 }
 
 // Test simple arrays

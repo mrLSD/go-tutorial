@@ -14,7 +14,7 @@ test:
 	@go test ./...
 
 build:
-	@go build
+	@go build main.go
 
 fmt:
 	@gofmt -w -l .

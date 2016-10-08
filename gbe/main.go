@@ -1,3 +1,4 @@
+
 package gbe
 
 import (
@@ -16,6 +17,7 @@ import (
 	"./functions"
 	"./multiple-return-values"
 	"./variadic-functions"
+	"./channel-buffering"
 )
 
 func Run() {
@@ -36,4 +38,5 @@ func Run() {
 	functions.Main()
 	multiple_return_values.Main()
 	variadic_functions.Main()
+	channel_buffering.Main()
 }

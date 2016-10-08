@@ -17,6 +17,7 @@ import (
 	"./functions"
 	"./multiple-return-values"
 	"./variadic-functions"
+	"./channels"
 	"./channel-buffering"
 )
 
@@ -38,5 +39,7 @@ func Run() {
 	functions.Main()
 	multiple_return_values.Main()
 	variadic_functions.Main()
+
+	channels.Main()
 	channel_buffering.Main()
 }

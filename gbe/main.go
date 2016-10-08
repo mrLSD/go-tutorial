@@ -29,6 +29,7 @@ import (
 	"./channel-buffering"
 	"./channel-synchronization"
 	"./channel-directions"
+	"./select_go"
 )
 
 func Run() {
@@ -62,4 +63,5 @@ func Run() {
 	channel_buffering.Main()
 	channel_synchronization.Main()
 	channel_directions.Main()
+	select_go.Main()
 }

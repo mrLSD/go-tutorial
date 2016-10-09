@@ -6,6 +6,7 @@ import (
 	"./channel-directions"
 	"./channel-synchronization"
 	"./channels"
+	"./closing-channels"
 	"./closures"
 	"./constants"
 	"./errors"
@@ -21,6 +22,7 @@ import (
 	"./non-blocking-channel-operations"
 	"./pointers"
 	"./range-flow"
+	"./range-over-channels"
 	"./recursion"
 	"./select_go"
 	"./slices"
@@ -30,9 +32,7 @@ import (
 	"./values"
 	"./variables"
 	"./variadic-functions"
-	"./closing-channels"
 	"fmt"
-	"./range-over-channels"
 )
 
 func Run() {

@@ -18,7 +18,7 @@ func (*args) Version() string {
 func main() {
 	var args args
 
-	args.Rbe = true
+	//args.Rbe = true
 	arg.MustParse(&args)
 
 	fmt.Printf("Arrays: %v\n", arrays())
@@ -36,6 +36,7 @@ func main() {
 
 	utils.TestStructs()
 	//utils.TestFiles()
+	utils.TestWrkDependencies()
 
 	if args.Rbe {
 		gbe.Run()

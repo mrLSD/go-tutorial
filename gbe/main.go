@@ -32,6 +32,7 @@ import (
 	"./variadic-functions"
 	"./closing-channels"
 	"fmt"
+	"./range-over-channels"
 )
 
 func Run() {
@@ -70,5 +71,5 @@ func Run() {
 	non_blocking_channel_operations.Main()
 	closing_channels.Main()
 
-
+	range_over_channels.Main()
 }

@@ -1,35 +1,36 @@
-
 package gbe
 
 import (
-	"fmt"
+	"./arrays"
+	"./channel-buffering"
+	"./channel-directions"
+	"./channel-synchronization"
+	"./channels"
+	"./closures"
+	"./constants"
+	"./errors"
+	"./for_loop"
+	"./functions"
+	"./goroutines"
 	"./hello-world"
+	"./if-else"
+	"./interfaces"
+	"./maps"
+	"./methods"
+	"./multiple-return-values"
+	"./non-blocking-channel-operations"
+	"./pointers"
+	"./range-flow"
+	"./recursion"
+	"./select_go"
+	"./slices"
+	"./structs"
+	"./switch-control"
+	"./timeouts"
 	"./values"
 	"./variables"
-	"./constants"
-	"./for_loop"
-	"./if-else"
-	"./switch-control"
-	"./arrays"
-	"./slices"
-	"./maps"
-	"./range-flow"
-	"./functions"
-	"./multiple-return-values"
 	"./variadic-functions"
-	"./closures"
-	"./recursion"
-	"./pointers"
-	"./structs"
-	"./methods"
-	"./interfaces"
-	"./errors"
-	"./goroutines"
-	"./channels"
-	"./channel-buffering"
-	"./channel-synchronization"
-	"./channel-directions"
-	"./select_go"
+	"fmt"
 )
 
 func Run() {
@@ -64,4 +65,6 @@ func Run() {
 	channel_synchronization.Main()
 	channel_directions.Main()
 	select_go.Main()
+	timeouts.Main()
+	non_blocking_channel_operations.Main()
 }

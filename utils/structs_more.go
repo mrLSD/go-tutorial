@@ -9,12 +9,12 @@ type VectMod interface {
 }
 
 type Vect2D struct {
-	x, y	int
+	x, y int
 }
 
 type Vect3D struct {
 	Vect2D
-	z		int
+	z int
 }
 
 func (vm Vect3D) Round() {

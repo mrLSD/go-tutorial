@@ -30,6 +30,7 @@ import (
 	"./values"
 	"./variables"
 	"./variadic-functions"
+	"./closing-channels"
 	"fmt"
 )
 
@@ -67,4 +68,7 @@ func Run() {
 	select_go.Main()
 	timeouts.Main()
 	non_blocking_channel_operations.Main()
+	closing_channels.Main()
+
+
 }

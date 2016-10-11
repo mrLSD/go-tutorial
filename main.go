@@ -3,13 +3,23 @@ package main
 import (
 	"./gbe"
 	"./utils"
-	"flag"
 	"fmt"
+	"github.com/alexflint/go-arg"
 )
 
+type args struct {
+	Rbe bool `arg:"-r,help:use Go By Examples"`
+}
+
+func (*args) Version() string {
+	return "Go Tutorials v0.1"
+}
+
 func main() {
-	useGBE := flag.Bool("gbe", false, "Use Go by Examples")
-	flag.Parse()
+	var args args
+
+	args.Rbe = true
+	arg.MustParse(&args)
 
 	fmt.Printf("Arrays: %v\n", arrays())
 
@@ -25,8 +35,9 @@ func main() {
 	utils.TestChannels()
 
 	utils.TestStructs()
+	//utils.TestFiles()
 
-	if *useGBE {
+	if args.Rbe {
 		gbe.Run()
 	}
 }

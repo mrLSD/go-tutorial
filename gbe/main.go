@@ -29,6 +29,7 @@ import (
 	"./recursion"
 	"./select_go"
 	"./slices"
+	"./sorting"
 	"./stateful-goroutines"
 	"./structs"
 	"./switch-control"
@@ -86,4 +87,5 @@ func Run() {
 	atomic_counters.Main()
 	mutexes.Main()
 	stateful_goroutines.Main()
+	sorting.Main()
 }

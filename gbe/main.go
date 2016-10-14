@@ -30,6 +30,7 @@ import (
 	"./select_go"
 	"./slices"
 	"./sorting"
+	"./sorting-by-functions"
 	"./stateful-goroutines"
 	"./structs"
 	"./switch-control"
@@ -88,4 +89,5 @@ func Run() {
 	mutexes.Main()
 	stateful_goroutines.Main()
 	sorting.Main()
+	sorting_by_functions.Main()
 }

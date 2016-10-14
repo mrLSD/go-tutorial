@@ -22,6 +22,7 @@ import (
 	"./multiple-return-values"
 	"./mutexes"
 	"./non-blocking-channel-operations"
+	"./panic"
 	"./pointers"
 	"./range-flow"
 	"./range-over-channels"
@@ -90,4 +91,5 @@ func Run() {
 	stateful_goroutines.Main()
 	sorting.Main()
 	sorting_by_functions.Main()
+	panic.Main()
 }

@@ -10,6 +10,7 @@ import (
 	"./closing-channels"
 	"./closures"
 	"./constants"
+	"./defer-exec"
 	"./errors"
 	"./for_loop"
 	"./functions"
@@ -91,5 +92,7 @@ func Run() {
 	stateful_goroutines.Main()
 	sorting.Main()
 	sorting_by_functions.Main()
+
 	panic.Main()
+	defer_exec.Main()
 }

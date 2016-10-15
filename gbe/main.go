@@ -9,6 +9,7 @@ import (
 	"./channels"
 	"./closing-channels"
 	"./closures"
+	"./collection-functions"
 	"./constants"
 	"./defer-exec"
 	"./errors"
@@ -95,4 +96,5 @@ func Run() {
 
 	panic.Main()
 	defer_exec.Main()
+	collection_functions.Main()
 }

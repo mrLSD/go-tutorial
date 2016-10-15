@@ -35,6 +35,7 @@ import (
 	"./sorting"
 	"./sorting-by-functions"
 	"./stateful-goroutines"
+	"./string-formatting"
 	"./string-functions"
 	"./structs"
 	"./switch-control"
@@ -99,4 +100,5 @@ func Run() {
 	defer_exec.Main()
 	collection_functions.Main()
 	string_functions.Main()
+	string_formatting.Main()
 }

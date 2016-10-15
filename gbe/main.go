@@ -35,6 +35,7 @@ import (
 	"./sorting"
 	"./sorting-by-functions"
 	"./stateful-goroutines"
+	"./string-functions"
 	"./structs"
 	"./switch-control"
 	"./tickers"
@@ -97,4 +98,5 @@ func Run() {
 	panic.Main()
 	defer_exec.Main()
 	collection_functions.Main()
+	string_functions.Main()
 }

@@ -42,6 +42,7 @@ import (
 	"./structs"
 	"./switch-control"
 	"./tickers"
+	"./time-fn"
 	"./timeouts"
 	"./timers"
 	"./values"
@@ -105,4 +106,5 @@ func Run() {
 	string_formatting.Main()
 	regular_expressions.Main()
 	json.Main()
+	time_fn.Main()
 }

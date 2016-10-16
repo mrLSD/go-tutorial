@@ -19,6 +19,7 @@ import (
 	"./hello-world"
 	"./if-else"
 	"./interfaces"
+	"./json"
 	"./maps"
 	"./methods"
 	"./multiple-return-values"
@@ -103,4 +104,5 @@ func Run() {
 	string_functions.Main()
 	string_formatting.Main()
 	regular_expressions.Main()
+	json.Main()
 }

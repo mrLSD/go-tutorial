@@ -30,6 +30,7 @@ import (
 	"./range-over-channels"
 	"./rate-limiting"
 	"./recursion"
+	"./regular-expressions"
 	"./select_go"
 	"./slices"
 	"./sorting"
@@ -101,4 +102,5 @@ func Run() {
 	collection_functions.Main()
 	string_functions.Main()
 	string_formatting.Main()
+	regular_expressions.Main()
 }

@@ -12,6 +12,7 @@ import (
 	"./collection-functions"
 	"./constants"
 	"./defer-exec"
+	"./epoch"
 	"./errors"
 	"./for_loop"
 	"./functions"
@@ -107,4 +108,5 @@ func Run() {
 	regular_expressions.Main()
 	json.Main()
 	time_fn.Main()
+	epoch.Main()
 }

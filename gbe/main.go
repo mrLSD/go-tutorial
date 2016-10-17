@@ -54,6 +54,7 @@ import (
 	"./variadic-functions"
 	"./worker-pools"
 	"fmt"
+	"./url-parsing"
 )
 
 func Run() {
@@ -116,4 +117,5 @@ func Run() {
 
 	random_numbers.Main()
 	number_parsing.Main()
+	url_parsing.Main()
 }

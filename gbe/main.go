@@ -36,6 +36,7 @@ import (
 	"./timers"
 	"./tickers"
 	"./worker-pools"
+	"./rate-limiting"
 )
 
 func Run() {
@@ -78,4 +79,5 @@ func Run() {
 	timers.Main()
 	tickers.Main()
 	worker_pools.Main()
+	rate_limiting.Main()
 }

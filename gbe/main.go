@@ -2,6 +2,7 @@ package gbe
 
 import (
 	"./arrays"
+	"./atomic-counters"
 	"./channel-buffering"
 	"./channel-directions"
 	"./channel-synchronization"
@@ -19,26 +20,26 @@ import (
 	"./maps"
 	"./methods"
 	"./multiple-return-values"
+	"./mutexes"
 	"./non-blocking-channel-operations"
 	"./pointers"
 	"./range-flow"
 	"./range-over-channels"
+	"./rate-limiting"
 	"./recursion"
 	"./select_go"
 	"./slices"
+	"./stateful-goroutines"
 	"./structs"
 	"./switch-control"
+	"./tickers"
 	"./timeouts"
+	"./timers"
 	"./values"
 	"./variables"
 	"./variadic-functions"
-	"fmt"
-	"./timers"
-	"./tickers"
 	"./worker-pools"
-	"./rate-limiting"
-	"./atomic-counters"
-	"./mutexes"
+	"fmt"
 )
 
 func Run() {
@@ -84,4 +85,5 @@ func Run() {
 	rate_limiting.Main()
 	atomic_counters.Main()
 	mutexes.Main()
+	stateful_goroutines.Main()
 }

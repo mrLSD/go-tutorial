@@ -3,6 +3,7 @@ package gbe
 import (
 	"./arrays"
 	"./atomic-counters"
+	"./base64-encoding"
 	"./channel-buffering"
 	"./channel-directions"
 	"./channel-synchronization"
@@ -120,4 +121,5 @@ func Run() {
 	number_parsing.Main()
 	url_parsing.Main()
 	sha1_hashes.Main()
+	base64_encoding.Main()
 }

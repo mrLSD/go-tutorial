@@ -38,6 +38,7 @@ import (
 	"./worker-pools"
 	"./rate-limiting"
 	"./atomic-counters"
+	"./mutexes"
 )
 
 func Run() {
@@ -82,4 +83,5 @@ func Run() {
 	worker_pools.Main()
 	rate_limiting.Main()
 	atomic_counters.Main()
+	mutexes.Main()
 }

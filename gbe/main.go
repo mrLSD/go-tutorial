@@ -26,6 +26,7 @@ import (
 	"./multiple-return-values"
 	"./mutexes"
 	"./non-blocking-channel-operations"
+	"./number-parsing"
 	"./panic"
 	"./pointers"
 	"./random-numbers"
@@ -114,4 +115,5 @@ func Run() {
 	time_formatting_parsing.Main()
 
 	random_numbers.Main()
+	number_parsing.Main()
 }

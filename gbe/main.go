@@ -35,6 +35,7 @@ import (
 	"fmt"
 	"./timers"
 	"./tickers"
+	"./worker-pools"
 )
 
 func Run() {
@@ -76,4 +77,5 @@ func Run() {
 	range_over_channels.Main()
 	timers.Main()
 	tickers.Main()
+	worker_pools.Main()
 }

@@ -33,6 +33,8 @@ import (
 	"./variables"
 	"./variadic-functions"
 	"fmt"
+	"./timers"
+	"./tickers"
 )
 
 func Run() {
@@ -72,4 +74,6 @@ func Run() {
 	closing_channels.Main()
 
 	range_over_channels.Main()
+	timers.Main()
+	tickers.Main()
 }

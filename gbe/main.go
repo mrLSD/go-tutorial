@@ -28,6 +28,7 @@ import (
 	"./non-blocking-channel-operations"
 	"./panic"
 	"./pointers"
+	"./random-numbers"
 	"./range-flow"
 	"./range-over-channels"
 	"./rate-limiting"
@@ -111,4 +112,6 @@ func Run() {
 	time_fn.Main()
 	epoch.Main()
 	time_formatting_parsing.Main()
+
+	random_numbers.Main()
 }

@@ -44,6 +44,7 @@ import (
 	"./switch-control"
 	"./tickers"
 	"./time-fn"
+	"./time-formatting-parsing"
 	"./timeouts"
 	"./timers"
 	"./values"
@@ -109,4 +110,5 @@ func Run() {
 	json.Main()
 	time_fn.Main()
 	epoch.Main()
+	time_formatting_parsing.Main()
 }

@@ -57,6 +57,7 @@ import (
 	"./variables"
 	"./variadic-functions"
 	"./worker-pools"
+	"./writing-files"
 	"fmt"
 )
 
@@ -124,4 +125,5 @@ func Run() {
 	sha1_hashes.Main()
 	base64_encoding.Main()
 	reading_files.Main()
+	writing_files.Main()
 }

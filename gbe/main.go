@@ -18,6 +18,7 @@ import (
 	"./environment-variables"
 	"./epoch"
 	"./errors"
+	"./execing-processes"
 	"./for_loop"
 	"./functions"
 	"./goroutines"
@@ -137,4 +138,5 @@ func Run() {
 
 	environment_variables.Main()
 	spawning_processes.Main()
+	execing_processes.Main()
 }

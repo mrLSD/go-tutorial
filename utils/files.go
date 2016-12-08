@@ -2,7 +2,7 @@ package utils
 
 import (
 	"fmt"
-	"github.com/labstack/gommon/log"
+	"log"
 	"io"
 	"os"
 )

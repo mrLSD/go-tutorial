@@ -1,0 +1,13 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/alexflint/go-arg",
+			"repository": "https://github.com/alexflint/go-arg",
+			"vcs": "git",
+			"revision": "7c77c70f8528a7b3310820aeec46d56a5be1ba70",
+			"branch": "master",
+			"notests": true
+		}
+	]
+}

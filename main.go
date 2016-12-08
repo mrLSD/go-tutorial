@@ -1,8 +1,8 @@
 package main
 
 import (
-	"./gbe"
-	"./utils"
+	"github.com/mrlsd/go-tutor/gbe"
+	"github.com/mrlsd/go-tutor/utils"
 	"fmt"
 	"github.com/alexflint/go-arg"
 )
@@ -37,6 +37,7 @@ func main() {
 	utils.TestStructs()
 	//utils.TestFiles()
 	utils.TestWrkDependencies()
+	utils.CheckLoopForLinkList()
 
 	if args.Rbe {
 		gbe.Run()

@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/mrlsd/go-tutor/gbe"
-	"github.com/mrlsd/go-tutor/utils"
 	"fmt"
 	"github.com/alexflint/go-arg"
+	"github.com/mrlsd/go-tutor/gbe"
+	"github.com/mrlsd/go-tutor/utils"
 )
 
 type args struct {

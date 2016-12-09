@@ -2,8 +2,8 @@ package utils
 
 import (
 	"fmt"
-	"log"
 	"io"
+	"log"
 	"os"
 )
 

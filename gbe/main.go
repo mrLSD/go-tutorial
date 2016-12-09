@@ -1,6 +1,7 @@
 package gbe
 
 import (
+	"fmt"
 	"github.com/mrlsd/go-tutor/gbe/arrays"
 	"github.com/mrlsd/go-tutor/gbe/atomic-counters"
 	"github.com/mrlsd/go-tutor/gbe/base64-encoding"
@@ -66,7 +67,6 @@ import (
 	"github.com/mrlsd/go-tutor/gbe/variadic-functions"
 	"github.com/mrlsd/go-tutor/gbe/worker-pools"
 	"github.com/mrlsd/go-tutor/gbe/writing-files"
-	"fmt"
 )
 
 func Run() {
